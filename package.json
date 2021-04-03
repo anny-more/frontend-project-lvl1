@@ -1,0 +1,33 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "brain games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anny-more/frontend-project-lvl1.git"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "keywords": [
+    "braingame",
+    "firstproject",
+    "hexlet"
+  ],
+  "author": "anny-more",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anny-more/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/anny-more/frontend-project-lvl1#readme",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
