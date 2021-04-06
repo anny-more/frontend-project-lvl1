@@ -39,6 +39,7 @@ const evenOrNot = () => {
       }
     }
     else {console.log('It is wrong answer.');
+    console.log(`Let's try again, ${name}`);
     break;}
   }
 
