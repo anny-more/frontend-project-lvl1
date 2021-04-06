@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 import getName from '../cli.js';
 
@@ -11,11 +12,11 @@ const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) +
 const evenOrNot = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let tryCount = 0;
-  for (let i = 0; i < 4; i += 1) {
-    const randomNumber = getRandomInt;
+  for (let i = 1; i < 4; i += 1) {
+    const randomNumber = getRandomInt(1, 50);
     const evenNumber = (randomNumber % 2 === 0);
     console.log(`Question: ${randomNumber}`);
-    const answer = getAnswer;
+    const answer = getAnswer();
 
     if (answer === 'yes') {
       if (evenNumber === true) {
@@ -27,7 +28,7 @@ const evenOrNot = () => {
       }
     }
 
-    if (answer === 'no') {
+    else if (answer === 'no') {
       if (evenNumber === false) {
         console.log('Correct!');
         tryCount += 1;
@@ -37,8 +38,8 @@ const evenOrNot = () => {
         break;
       }
     }
-    console.log('It is wrong answer.');
-    break;
+    else {console.log('It is wrong answer.');
+    break;}
   }
 
   if (tryCount === 3) {
