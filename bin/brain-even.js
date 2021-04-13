@@ -26,9 +26,7 @@ const evenOrNot = () => {
         console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
         break;
       }
-    }
-
-    else if (answer === 'no') {
+    } else if (answer === 'no') {
       if (evenNumber === false) {
         console.log('Correct!');
         tryCount += 1;
@@ -37,10 +35,11 @@ const evenOrNot = () => {
         console.log(`Let's try again, ${name}`);
         break;
       }
+    } else {
+      console.log('It is wrong answer.');
+      console.log(`Let's try again, ${name}`);
+      break;
     }
-    else {console.log('It is wrong answer.');
-    console.log(`Let's try again, ${name}`);
-    break;}
   }
 
   if (tryCount === 3) {
